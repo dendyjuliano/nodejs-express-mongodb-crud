@@ -1,0 +1,41 @@
+<!-- include header -->
+<%- include('include/_header') %>
+    <!-- include header -->
+
+    <!-- Main Site -->
+    <main id="site-main mt-5">
+        <div class="container">
+            <div class="box-nav d-flex-justify-between">
+                <a href="/add-user" class="border-shadow text-decoration-none">
+                    <span class="text-gradient">New User <i class="fas fa-user"></i></span>
+                </a>
+            </div>
+
+            <!-- form handling -->
+            <form action="/" method="POST">
+                <div class="table-responsive">
+                    <table class="table mt-3">
+                        <thead class="bg-dark text-light">
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Gender</th>
+                                <th>Status</th>
+                                <th class="text-center">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <%- include('include/_show') %>
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+            <!-- form handling -->
+        </div>
+    </main>
+    <!-- Main Site -->
+
+    <!-- include footer -->
+    <%- include('include/_footer') %>
+        <!-- include footer -->

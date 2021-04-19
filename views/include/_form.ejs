@@ -1,0 +1,40 @@
+<!-- form handling -->
+<form action="/api/users" method="POST" id="add_user">
+    <div class="new_user">
+        <div class="form-group">
+            <input type="hidden" name="id" value="">
+            <label for="name" class="text-dark">Name</label>
+            <input class="form-control" type="text" name="name" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <input type="hidden" name="id" value="">
+            <label for="email" class="text-dark">Email</label>
+            <input class="form-control" type="text" name="email" placeholder="example@gmail.com">
+        </div>
+        <div class="form-group">
+            <label for="">Gender</label> <br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="male">
+                <label class="form-check-label" for="inlineRadio1">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="female">
+                <label class="form-check-label" for="inlineRadio2">Female</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="">Status</label> <br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="status" id="inlineRadio1" value="active">
+                <label class="form-check-label" for="inlineRadio1">Active</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="status" id="inlineRadio2" value="unactive">
+                <label class="form-check-label" for="inlineRadio2">Unactive</label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+<!-- form handling -->
